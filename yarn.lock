@@ -5087,9 +5087,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"carbon-tutorial@workspace:.":
+"parklink@workspace:.":
   version: 0.0.0-use.local
-  resolution: "carbon-tutorial@workspace:."
+  resolution: "parklink@workspace:."
   dependencies:
     "@carbon/react": 1.32.0
     "@commitlint/cli": 7.5.2
