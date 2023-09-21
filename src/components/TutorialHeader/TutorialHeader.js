@@ -59,7 +59,6 @@ const TutorialHeader = () => (
             <Switcher size={20} />
           </HeaderGlobalAction>
         </HeaderGlobalBar>{' '}
-        />
       </Header>
     )}
   />
