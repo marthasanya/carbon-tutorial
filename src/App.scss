@@ -1,6 +1,7 @@
-@use './components/TutorialHeader/tutorial-header';
-@use './content/LandingPage/landing-page';
-@use './content/RepoPage/repo-page';
+@use './components/ParklinkHeader/parklink-header';
+@use './content/HowitworksPage/howitworks-page';
+@use './content/PaymentsolutionsPage/paymentsolutions-page';
+@use './content/SupportPage/support-page';
 .App {
   text-align: center;
 }
@@ -19,11 +20,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #000000;
 }
 
 @keyframes App-logo-spin {

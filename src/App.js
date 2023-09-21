@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import './App.scss';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import { Content, Theme } from '@carbon/react';
-import LandingPage from './content/LandingPage';
-import RepoPage from './content/RepoPage';
-import TutorialHeader from './components/TutorialHeader';
+import ParklinkHeader from './components/ParklinkHeader';
+import HowitworksPage from './content/HowitworksPage';
+import PaymentsolutionsPage from './content/PaymentsolutionsPage';
+import SupportPage from './content/SupportPage';
 
 class App extends Component {
   render() {
@@ -12,12 +13,13 @@ class App extends Component {
       <>
         <BrowserRouter>
           <Theme theme="g100">
-            <TutorialHeader />
+            <ParklinkHeader />
           </Theme>
           <Content>
             <Switch>
-              <Route exact path="/" component={LandingPage} />
-              <Route path="/repos" component={RepoPage} />
+              <Route exact path="/" component={HowitworksPage} />
+              <Route path="/pay" component={PaymentsolutionsPage} />
+              <Route path="/support" component={SupportPage} />
             </Switch>
           </Content>
         </BrowserRouter>

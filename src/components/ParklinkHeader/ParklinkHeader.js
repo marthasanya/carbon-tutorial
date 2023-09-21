@@ -16,10 +16,10 @@ import {
 } from '@carbon/react';
 import { Link } from 'react-router-dom';
 
-const TutorialHeader = () => (
+const ParklinkHeader = () => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
-      <Header aria-label="Carbon Tutorial">
+      <Header aria-label="Parklink">
         <SkipToContent />
         <HeaderMenuButton
           aria-label="Open menu"
@@ -27,11 +27,17 @@ const TutorialHeader = () => (
           isActive={isSideNavExpanded}
         />
         <HeaderName as={Link} to="/" prefix="IBM">
-          Carbon Tutorial
+          ParkLink
         </HeaderName>
-        <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderMenuItem as={Link} to="/repos">
-            Repositories
+        <HeaderNavigation aria-label="Parklink">
+          <HeaderMenuItem as={Link} to="/">
+            How It Works
+          </HeaderMenuItem>
+          <HeaderMenuItem as={Link} to="/pay">
+            Payment Soultions
+          </HeaderMenuItem>
+          <HeaderMenuItem as={Link} to="/support">
+            Support
           </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
@@ -40,7 +46,9 @@ const TutorialHeader = () => (
           isPersistent={false}>
           <SideNavItems>
             <HeaderSideNavItems>
-              <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+              <HeaderMenuItem href="/">How It Works</HeaderMenuItem>
+              <HeaderMenuItem href="/pay">Payment Soultions</HeaderMenuItem>
+              <HeaderMenuItem href="/support">Support</HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
@@ -64,4 +72,4 @@ const TutorialHeader = () => (
   />
 );
 
-export default TutorialHeader;
+export default ParklinkHeader;

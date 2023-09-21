@@ -8,8 +8,8 @@ describe('React Step 1 Tests', () => {
     render(<App />);
   });
 
-  it('contains Carbon Tutorial heading', () => {
+  it('contains Parklink heading', () => {
     render(<App />);
-    expect(screen.getByText('Carbon Tutorial')).toBeInTheDocument();
+    expect(screen.getByText('Parklink')).toBeInTheDocument();
   });
 });
